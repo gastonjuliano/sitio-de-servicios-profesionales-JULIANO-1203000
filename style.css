@@ -1,0 +1,86 @@
+/*
+El sitio deberá estar dividido en secciones o enlaces a otras páginas, debe incluir los siguientes contenidos
+
+Logotipo
+Misión, visión y valores
+Servicios ofrecidos
+Propuesta comercial
+Información de contacto
+
+
+
+Importante: todas las páginas de la web deberán tener un menú donde se pueda navegar entre una página y otra. 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+header{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+h1{
+    font-size: 50px;
+    font-style: normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li{
+    display: inline-flex;
+    font-style: normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    justify-content: space-evenly;
+    font-size: 25px;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.divmain {
+    margin-top: 5%;
+    display: flex;
+    flex-flow: row;
+    background-color: bisque;
+    justify-content: space-evenly;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+}
+
+.textomain {
+    font-style: normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 6%;
+}
+.textomain h2{
+    font-size: 45px;
+}
+.imagenmain img{
+    width: 60%;
+    height: 90%;
+}
+
+#wpp {
+    width: 100px;
+    height: 100px;
+}
+p{
+    line-height: 150%;
+}
