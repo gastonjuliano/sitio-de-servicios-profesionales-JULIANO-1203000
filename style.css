@@ -15,72 +15,291 @@ Importante: todas las páginas de la web deberán tener un menú donde se pueda 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+}
 
-header{
+header {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
     background-color: black;
+    height: 7%;
 }
 
-h1{
-    font-size: 50px;
+body {
+    height: 150vh;
+}
+
+h1 {
+    padding-top: 1%;
+    font-size: 5em;
     font-style: normal;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h1 a{
+h1 a {
+
     text-decoration: none;
     color: white;
 }
-.navbar ul li{
+
+.navbar ul li {
+    margin-top: 5%;
     display: inline-flex;
     font-style: normal;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     justify-content: space-evenly;
     font-size: 25px;
-    
+
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     color: white;
 }
 
 .divmain {
-    margin-top: 5%;
     display: flex;
     flex-flow: row;
     background-color: bisque;
     justify-content: space-evenly;
+    height: 150vh;
 }
 
 header img {
-    width: 70px;
-    height: 70px;
+    width: 6%;
+    height: 100%
 }
 
 .textomain {
     font-style: normal;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     text-align: center;
     padding: 6%;
 }
-.textomain h2{
+
+.textomain h2 {
     font-size: 45px;
 }
-.imagenmain img{
-    width: 60%;
-    height: 90%;
+
+.imagenmain img {
+    padding-top: 5%;
+    width: 90%;
+    height: 40%;
 }
 
 #wpp {
     width: 100px;
     height: 100px;
 }
-p{
+
+p {
     line-height: 150%;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30%;
+}
+
+.redes a img {
+    height: 45px;
+    width: 45px;
+}
+
+
+
+
+
+
+
+.grid-index {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.6fr 0.2fr 1.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". tituloinicio tituloinicio tituloinicio ."
+        "breveindex breveindex breveindex breveindex ."
+        ". . . . ."
+        ". breveindex2 breveindex2 breveindex2 breveindex2";
+}
+
+
+
+.tituloinicio {
+    grid-area: tituloinicio;
+    margin-top: 3%;
+}
+
+.tituloinicio h2 {
+    position: sticky;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 45px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: black;
+}
+
+.breveindex {
+    grid-area: breveindex;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.breveindeximg {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    background-image: url(../assets/masamadreblanco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.breveindextxt {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    justify-content: center;
+    align-content: center;
+}
+
+.breveindextxt h2 {
+    display: block;
+    position: sticky;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.breveindex2 {
+    grid-area: breveindex2;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.breveindeximg2 {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    background-image: url(../assets/masamadreintegral.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.breveindextxt2 {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    justify-content: center;
+    align-content: center;
+}
+
+.breveindextxt2 h2 {
+    display: block;
+    position: sticky;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+
+}
+
+
+
+
+
+
+.acercatitulo {
+    position: sticky;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 86px;
+    color: black;
+}
+
+
+
+
+
+
+
+.vistaservicios {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    height: 60vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.vistaservicios .imgservicios {
+    display: flex;
+    background: url(../assets/panmolde.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+
+}
+
+.txtservicios {
+    display: flex;
+    flex-flow: column;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
