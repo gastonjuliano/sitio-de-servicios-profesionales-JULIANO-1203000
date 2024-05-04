@@ -196,7 +196,7 @@ footer {
     height: 100%;
     display: flex;
     flex-flow: column;
-    background-image: url(../assets/masamadreblanco.jpg);
+    background-image: url(./assets/masamadreblanco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
@@ -236,7 +236,7 @@ footer {
     height: 100%;
     width: 40%;
     display: flex;
-    background-image: url(../assets/masamadreintegral.jpg);
+    background-image: url(./assets/masamadreintegral.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -303,7 +303,7 @@ footer {
 
 .vistaservicios .imgservicios {
     display: flex;
-    background: url(../assets/panmolde.png);
+    background: url(./assets/panmolde.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
@@ -340,7 +340,7 @@ footer {
 
 .vistacontacto .imgcontacto {
     display: flex;
-    background: url(../assets/pretzels.jpg);
+    background: url(./assets/pretzels.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
