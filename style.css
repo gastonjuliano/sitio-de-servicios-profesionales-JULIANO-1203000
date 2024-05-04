@@ -42,7 +42,7 @@ body {
 
 h1 {
     padding-top: 1%;
-    font-size: 5em;
+    font-size: 70px;
     font-style: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -230,6 +230,7 @@ footer {
     grid-area: breveindex2;
     display: flex;
     flex-flow: row-reverse nowrap;
+    margin-top: 3%;
 }
 
 .breveindeximg2 {
@@ -367,7 +368,20 @@ footer {
 }
 
 
+@media (max-width:1440px){
 
+
+    .txtservicios p{
+        font-size: 25px;
+    }
+
+    
+
+
+
+
+
+}
 
 @media (max-width:1130px){
 
@@ -378,7 +392,7 @@ footer {
     .logotitulo {
         width: 100%;
         justify-content: center;
-        gap: 100px;
+        gap: 50px;
     }
     .navbar{
         width: 100%;
@@ -399,13 +413,27 @@ footer {
 
 }
 
-@media (max-width:767px){
+@media (max-width:768px){
 
+    .txtservicios p{
+        font-size: 18px;
+    }
+
+    .txtcontacto h2{
+        font-size: 30px;
+
+    }
+
+    .textomain{
+        font-size: 20px;
+    }
     .grid-index{
         display: flex;
         flex-flow: column;
     }
-
+    .breveindex2{
+        margin-top: 6%;
+    }
     .breveindextxt{
         font-size: 15px;
     }
@@ -472,4 +500,126 @@ footer {
         display: flex;
         flex-flow: column;
     }
+
+    .logotitulo {
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+
+
+@media (max-width:425px){
+
+    .txtservicios p{
+        font-size: 15px;
+    }
+
+    .breveindex2{
+        margin-top: 6%;
+    }
+    .breveindextxt{
+        font-size: 12px;
+    }
+    .breveindextxt2{
+        font-size: 12px;
+    }
+
+    .tituloinicio h2{
+        font-size: 21px;
+    }
+
+    .breveindextxt h2{
+        font-size: 18px;
+    }
+    .breveindextxt2 h2{
+        font-size: 18px;
+    }
+    .navbar ul{
+        gap: 0px;
+    }
+
+    .navbar ul li {
+        font-size: 16px;
+    }
+    .logotitulo h1{
+        font-size: 36px;
+    }
+    .logotitulo img{
+        width: 90px;
+    }
+
+    .vistaservicios {
+        flex-flow: column nowrap;
+    }
+    .vistaservicios .imgservicios{
+        width: 100%;
+    }
+    .txtservicios {
+        font-size: 15px;
+        width: 100%;
+    }
+
+
+    .vistacontacto {
+        flex-flow: column;
+    }
+    
+    .vistacontacto .imgcontacto {
+        width: 100%;
+        height: 50%;
+    
+    }
+    
+    .txtcontacto {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #wpp{
+        width: 50px;
+        height: 50px;
+    }
+    .divmvv{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .logotitulo {
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+
+@media (max-width:320px){
+
+    .breveindextxt{
+        font-size: 12px;
+    }
+    .breveindextxt2{
+        font-size: 12px;
+    }
+
+    .tituloinicio h2{
+        font-size: 21px;
+    }
+
+    .breveindextxt h2{
+        font-size: 18px;
+    }
+    .breveindextxt2 h2{
+        font-size: 18px;
+    }
+
+    .navbar ul li {
+        font-size: 14px;
+    }
+    h1{
+        font-size: 50px;
+    }
+
+
 }
